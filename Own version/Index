@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+    body{
+        margin-top: 70px;
+        background: #333;
+        color: white;
+    }
+    </style>
+    <title>Weight Converter</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h1 class="display-4 text-center mb-3">Weight Converter</h1>
+                <form>
+                    <div class="form-group">
+                        <input id="weightInput" type="number" class="form-control form-control-lg" placeholder="Enter weight...">
+                        <select class="form-control" id="inputType">
+                            <option value="kilograms" selected>Kilograms</option>
+                            <option value="pounds">Pounds</option>
+                            <option value="grams">Grams</option>
+                            <option value="ounces">Ounces</option>
+                        </select>
+                    </div>
+                </form>
+                <div id="output">
+                    <div class="card bg-primary mb-2">
+                        <div class="card-block">
+                            <h4 id="first"></h4>
+                            <div id="firstOutput"></div>
+                        </div> 
+                    </div>
+                    <div class="card bg-success mb-2">
+                        <div class="card-block">
+                            <h4 id="second"></h4>
+                            <div id="secondOutput"></div>
+                        </div> 
+                    </div>
+                    <div class="card bg-danger mb-2">
+                        <div class="card-block">
+                            <h4 id="third"></h4>
+                            <div id="thirdOutput"></div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
