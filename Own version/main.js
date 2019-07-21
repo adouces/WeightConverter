@@ -6,7 +6,7 @@ document.getElementById('weightInput').addEventListener('input',function(e){
     switch(input){
         case "kilograms":
             document.getElementById('first').innerHTML = "Grams: ";
-            document.getElementById('firstOutput').innerHTML = num/1000;
+            document.getElementById('firstOutput').innerHTML = num*1000;
             document.getElementById('second').innerHTML = "Pounds: ";
             document.getElementById('secondOutput').innerHTML = num*2.20462;
             document.getElementById('third').innerHTML = "Ounces: ";
@@ -24,7 +24,7 @@ document.getElementById('weightInput').addEventListener('input',function(e){
         
         case "grams":
             document.getElementById('first').innerHTML = "Kilograms: ";
-            document.getElementById('firstOutput').innerHTML = num*1000;
+            document.getElementById('firstOutput').innerHTML = num/1000;
             document.getElementById('second').innerHTML = "Pounds: ";
             document.getElementById('secondOutput').innerHTML = num*0.00220462;
             document.getElementById('third').innerHTML = "Ounces: ";
