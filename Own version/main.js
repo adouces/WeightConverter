@@ -1,5 +1,7 @@
 document.getElementById('output').style.visibility = 'hidden';
-document.getElementById('weightInput').addEventListener('input',function(e){
+
+document.getElementById('weightInput').addEventListener('input',convert);
+function convert(e){
     document.getElementById('output').style.visibility = 'visible';
     var input = document.getElementById("inputType").value;
     let num = e.target.value;
@@ -42,4 +44,4 @@ document.getElementById('weightInput').addEventListener('input',function(e){
     }
     
     
-});
+}
